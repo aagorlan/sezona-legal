@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sezona — политика конфиденциальности / Privacy policy</title>
+<style>
+  :root { --bg: #f7f3e8; --fg: #1f2a1c; --muted: #5b6656; --accent: #2e7d32; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #161a14; --fg: #e8eee4; --muted: #a7b3a1; --accent: #81c784; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin-top: 2em; color: var(--accent); }
+  .meta { color: var(--muted); font-size: .9rem; }
+  nav a { color: var(--accent); margin-right: 16px; }
+  li { margin: 6px 0; }
+  hr { border: 0; border-top: 1px solid var(--muted); opacity: .3; margin: 48px 0; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#ru">Русский</a><a href="#en">English</a></nav>
+
+<section id="ru">
+<h1>Sezona — политика конфиденциальности</h1>
+<p class="meta">Приложение «Sezona: сад и огород» (Android, пакет app.sezona). Редакция от 6 ноября 2026 г.</p>
+
+<h2>Коротко</h2>
+<p>Без регистрации и аккаунта. Участок, посадки, заметки и настройки хранятся на вашем телефоне в зашифрованном виде. С телефона уходит только то, что нужно для выбранной вами функции, и только после вашего согласия — приложение заранее показывает, что именно.</p>
+
+<h2>Что хранится на телефоне</h2>
+<p>Участок и его место, зоны, места посадки, посадки, сорта, свои дела, заметки, фото, настройки, ключи ваших моделей ИИ. Эти данные не передаются разработчику. Резервная копия Android для приложения отключена. При удалении приложения данные удаляются вместе с ним.</p>
+
+<h2>Что и куда уходит с телефона</h2>
+<ul>
+<li><b>Погода и климат — сервис Open-Meteo.</b> С вашего согласия — примерное место участка (точность около 1 км): один раз, чтобы получить погоду за прошлые 30 лет, и при обновлении прогноза. Имя, адрес и данные о вас не уходят.</li>
+<li><b>Определение места по телефону.</b> Приложение один раз берёт приблизительное местоположение, только чтобы найти населённый пункт участка, и сразу округляет координаты до 1 км. Точное местоположение не запрашивается, фоновое — тоже.</li>
+<li><b>Обращения в поддержку — сервер проекта.</b> Текст обращения, снимок экрана (если вы его приложили), версия приложения и Android, язык. Хранятся, пока идёт переписка, и 3 месяца после закрытия, затем удаляются.</li>
+<li><b>Номер установки</b> — случайный идентификатор, который приложение создаёт для связи с сервером проекта (поддержка, подписка, справочники). Он не связан с вашим именем, телефоном или аккаунтом Google/VK.</li>
+<li><b>Справочники по подписке.</b> Приложение ищет культуры и сорта в справочнике на сервере проекта. Если вы включили отправку своих элементов («Ещё → Справочники»), на сервер уходят ваши культуры, сорта и процессы — только их названия, описания, сроки и свойства. Участок, посадки, заметки и фото не уходят. Ваши сорта видят другие подписчики без указания, от кого; культуры и процессы разработчик проверяет и может включить в общий справочник.</li>
+<li><b>ИИ проекта (по подписке или коду приглашения).</b> Ваш запрос и выбранные фото (уменьшенные, без данных о месте съёмки) уходят через сервер проекта поставщику модели ИИ. Имя, адрес, координаты и номер установки поставщику не передаются. Сервер проекта не хранит текст запроса и фото — только учёт: вид запроса, какая модель ответила и стоимость.</li>
+<li><b>Ваша модель ИИ по своему ключу.</b> Запросы идут с телефона прямо к выбранному вами поставщику по его правилам; приложение заранее показывает, что уходит.</li>
+<li><b>Уведомления.</b> Для ответов поддержки и ежедневного напоминания о работах сервер хранит адрес уведомлений этого телефона (Firebase Cloud Messaging или RuStore Push) и время напоминания. Работы, посадки и участок на сервер не уходят. Напоминания выключаются в «Ещё → Напоминания».</li>
+<li><b>Подписка.</b> Оплата — через магазин приложений по его правилам; платёжные данные разработчику не передаются. Сервер хранит подтверждение покупки и срок подписки.</li>
+</ul>
+
+<h2>Что не уходит никогда</h2>
+<p>Ключи ваших моделей ИИ; точное место участка (координаты, адрес); фото с данными о месте съёмки; контакты, SMS, история браузера и другие данные телефона.</p>
+
+<h2>Сервер проекта и обработчики</h2>
+<p>Сервер проекта находится в Европейском союзе. Для работы функций используются: Open-Meteo (погода), поставщики моделей ИИ (для ИИ проекта — Anthropic), Google Firebase Cloud Messaging и RuStore Push (уведомления), GitHub (хранение обращений в поддержку в закрытом репозитории), Telegram (уведомления разработчику об обращениях и черновики ответов). IP-адрес запроса сервер использует только для определения страны (выбор модели ИИ) и не записывает в журналы.</p>
+
+<h2>Ваши права</h2>
+<p>Данные на телефоне вы можете изменить или удалить в приложении, а все сразу — удалив приложение. Чтобы удалить данные на сервере (обращения, отправленные элементы справочника, адрес уведомлений) или узнать, что о вас хранится, напишите через «Ещё → Поддержка» или по адресу разработчика в карточке приложения в магазине.</p>
+
+<h2>Дети</h2>
+<p>Приложение не предназначено для детей младше 13 лет и не собирает о них данные сознательно.</p>
+
+<h2>Изменения</h2>
+<p>Новую редакцию приложение покажет и попросит принять заново. Действующая редакция — на этой странице.</p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>Sezona — privacy policy</h1>
+<p class="meta">The app “Sezona: Garden &amp; Veg Planner” (Android, package app.sezona). Version of 6 November 2026.</p>
+
+<h2>In short</h2>
+<p>No sign-up, no account. Your plot, plantings, notes and settings are kept on your phone, encrypted. Only what a feature you choose needs leaves the phone, and only with your consent — the app shows beforehand exactly what goes.</p>
+
+<h2>Kept on the phone</h2>
+<p>The plot and its place, zones, spots, plantings, varieties, your own tasks, notes, photos, settings, the keys of your AI models. They are not passed to the developer. Android backup is turned off for the app. Removing the app removes them.</p>
+
+<h2>What leaves the phone and where</h2>
+<ul>
+<li><b>Weather and climate — the Open-Meteo service.</b> With your consent, the approximate place of the plot (about 1 km): once, for 30 years of past weather, and when the forecast is refreshed. No name, address or data about you.</li>
+<li><b>Locating by phone.</b> The app takes your approximate location once, only to find the town of your plot, and rounds the coordinates to 1 km at once. Precise or background location is never requested.</li>
+<li><b>Support requests — the project server.</b> Your message, a screenshot if you attach one, the app and Android versions, the language. Kept while the conversation goes on and 3 months after it is closed, then deleted.</li>
+<li><b>Installation number</b> — a random identifier the app creates to talk to the project server (support, subscription, catalogs). It is not linked to your name, phone number or Google/VK account.</li>
+<li><b>Catalogs with a subscription.</b> The app looks up crops and varieties in the catalog on the project server. If you turned on sending your own items (“More → Catalogs”), your crops, varieties and processes go to the server — only their names, descriptions, dates and properties. The plot, plantings, notes and photos do not. Other subscribers see your varieties without knowing they are yours; crops and processes are reviewed by the developer and may join the common catalog.</li>
+<li><b>The project’s AI (subscription or invite code).</b> Your request and chosen photos (downscaled, without location data) go through the project server to the AI model provider. Your name, address, coordinates and installation number are not passed on. The project server keeps no request text or photos — only an account of the kind of request, the model and the cost.</li>
+<li><b>Your own AI model by key.</b> Requests go from the phone straight to the provider you chose, under its terms; the app shows beforehand what goes.</li>
+<li><b>Notifications.</b> For support answers and the daily reminder about works the server keeps this phone’s notification address (Firebase Cloud Messaging or RuStore Push) and the reminder time. Works, plantings and the plot do not go to the server. Reminders are turned off in “More → Reminders”.</li>
+<li><b>Subscription.</b> Payment goes through the app store under its rules; payment details are not passed to the developer. The server keeps the purchase confirmation and the subscription period.</li>
+</ul>
+
+<h2>Never leaves the phone</h2>
+<p>The keys of your AI models; the exact place of the plot (coordinates, address); photo location data; contacts, SMS, browser history or any other data of the phone.</p>
+
+<h2>Project server and processors</h2>
+<p>The project server is in the European Union. Features use: Open-Meteo (weather), AI model providers (Anthropic for the project’s AI), Google Firebase Cloud Messaging and RuStore Push (notifications), GitHub (support requests, in a private repository), Telegram (notices of support requests and draft answers to the developer). The server uses a request’s IP address only to tell the country (choice of AI model) and does not log it.</p>
+
+<h2>Your rights</h2>
+<p>Data on the phone can be changed or deleted in the app, or all at once by removing the app. To delete data on the server (support requests, catalog items you sent, the notification address) or to learn what is kept about you, write through “More → Support” or to the developer’s address in the app’s store listing.</p>
+
+<h2>Children</h2>
+<p>The app is not meant for children under 13 and does not knowingly collect data about them.</p>
+
+<h2>Changes</h2>
+<p>The app shows a new version and asks you to accept it again. The current version is on this page.</p>
+</section>
+</main>
+</body>
+</html>
